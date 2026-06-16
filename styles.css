@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: chocolate;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+.navbar {
+  width: fit-content;
+  margin: 0 auto 40px auto;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 60px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  background-color: #111;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card .content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.05)
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card .content span {
+  transform: translateY(30px);
+  transition: transform 0.5s ease;
+}
+
+.card h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.card p {
+  color: #f1f1f1;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.container:hover .card {
+  flex: 0.9;
+}
+
+.container .card:hover {
+  flex: 2.5;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.card:hover .content {
+  opacity: 1;
+}
+
+.card:hover .content span {
+  transform: translateY(0);
+}
+
+
+ .card p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 12px;
+  padding: 14px 16px;
+     border: 2px solid #ffd27f;
+  border-radius: 12px;
+  box-shadow: white 0px 0px 10px, white 0px 0px 20px, white 0px 0px 30px, white 0px 0px 40px;
+}
+
+
+.history {
+  width: 100%;
+  margin: 40px auto;
+  padding: 30px;
+  border: 10px solid white;
+  border-radius: 22px;
+color: orange;
+}
